@@ -20,7 +20,6 @@ function getMax(charsLeft: number, joltages: string, bottom: number): string {
             maxindex = i;
         }
     }
-    const a = joltages[maxindex];
 
     return joltages[maxindex].concat(getMax(charsLeft - 1, joltages, maxindex + 1));
 }
